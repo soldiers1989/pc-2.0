@@ -1,0 +1,866 @@
+@import "reset";
+
+.b {
+    border: 1px solid red;
+}
+
+.financingDetails_page {
+    padding: 50px;
+}
+
+.financingDetails_page-header {
+    width: 820px;
+    height: 46px;
+    background: rgba(247, 250, 255, 1);
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    span {
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    span:nth-child(2) {
+
+    }
+    span:last-child {
+        position: absolute;
+        right: 50px;
+        width: 8px;
+        height: 15px;
+        img {
+            width: 8px;
+            height: 15px;
+        }
+    }
+}
+
+.financingDetails_page-content {
+    height: 151px;
+    margin-top: 10px;
+    li {
+        height: 50px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        > div {
+            display: flex;
+            justify-content: flex-start;
+            span:nth-child(1) {
+                color: @666;
+                font-size: @font_size_14;
+            }
+            span:nth-child(2) {
+                font-size: 14px;
+                font-family: Helvetica;
+                font-weight: bold;
+            }
+        }
+        > div:nth-child(odd) {
+            width: 60%;
+            span, div {
+                height: 100%;
+            }
+            > span:nth-child(1) {
+                width: 20%;
+            }
+            > span:nth-child(2) {
+                width: 20%;
+            }
+            div:nth-child(3) {
+                padding-top: 17.5px;
+                width: 60%;
+                > div {
+                    height: 15px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        > div:nth-child(even) {
+            width: 40%;
+            span:nth-child(1) {
+                width: 20%;
+            }
+            span:nth-child(2) {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.financingDetails_page-content2 {
+    height: 151px;
+    margin: 10px 0;
+    li {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        > div {
+            display: flex;
+            justify-content: flex-start;
+            width: 30%;
+            span:nth-child(1) {
+                width: 40%;
+                color: @666;
+                font-size: @font_size_14;
+            }
+            span:nth-child(2) {
+                width: 60%;
+                font-size: 14px;
+                font-family: Helvetica;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.moreWarning {
+    width: 140px;
+}
+
+.equalWarning {
+    width: 100px;
+}
+
+.lessWarning {
+    width: 80px;
+}
+
+.equalLoss {
+    width: 60px;
+}
+
+.lessLoss {
+    width: 40px;
+}
+
+.bgRed {
+    background-color: @red;
+}
+
+.bgYellow {
+    background-color: #FF9324;
+}
+
+.bgGreen {
+    background-color: #0FBB3B;
+}
+
+.bgOrange {
+    background-color: #FDA84B;
+}
+
+.fontOrange {
+    color: #FDA84B;
+}
+
+.fontGray {
+    color: @333;
+}
+
+.fontBlue {
+    color: #449DE8;
+}
+
+/*合约详情*/
+.contractDetails_page {
+    padding: 35px;
+}
+
+.contractDetails_page-header {
+    padding: 0 15px;
+    height: 95px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.contractDetails_page-header-left {
+    width: 602px;
+    padding: 10px 0 15px 0;
+    p:nth-child(1) {
+        font-size: @font_size_18;
+        font-family: Helvetica;
+        font-weight: bold;
+        height: 45px;
+        line-height: 45px;
+    }
+    p:nth-child(2) {
+       /* display: flex;
+        justify-content: flex-start;*/
+        height: 35px;
+        line-height: 35px;
+        span {
+            width: 100%;
+            font-size: @font_size_14;
+            color: @666;
+            font-family: Microsoft YaHei;
+            display: inline-block;
+        }
+        span:nth-child(odd) {
+            width: 70px;
+        }
+        span:nth-child(even) {
+            width: 110px;
+        }
+        span:nth-child(2) {
+            width: 160px;
+        }
+    }
+}
+
+.contractDetails_page-header-right {
+    width: 218px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    button {
+        width: 100px;
+        height: 42px;
+        border: none;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+    >button:nth-child(1) {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(112, 112, 112, 1);
+        color: @333;
+    }
+    a:nth-child(2) {
+        button {
+            background: rgba(220, 45, 57, 1);
+            color: @fff;
+        }
+    }
+
+}
+
+.contractDetails_page-number {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    li {
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            span {
+                width: 50%;
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+            }
+            span:nth-child(1) {
+                color: @666;
+            }
+            span:nth-child(2) {
+                color: @333;
+            }
+        }
+    }
+    li:nth-child(1) {
+        width: 40%;
+        > div {
+            display: flex;
+            justify-content: flex-start;
+            span:nth-child(1) {
+                width: 25%;
+            }
+            span:nth-child(2) {
+                width: 23%;
+            }
+            div:nth-child(3) {
+                > div {
+                    height: 15px;
+                    border-radius: 10px;
+                }
+                width: 52%;
+                display: inline-block;
+            }
+        }
+    }
+    li:nth-child(2) {
+        width: 18%;
+    }
+    li:nth-child(3) {
+        width: 22%;
+    }
+    li:nth-child(4) {
+        width: 20%;
+    }
+}
+
+.contractDetails_page-info {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    li {
+        div {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    li:nth-child(1) {
+        width: 40%;
+        > div {
+            span {
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+            }
+            span:nth-child(1) {
+                color: @666;
+                width: 30%;
+            }
+            span:nth-child(2) {
+                width: 70%;
+            }
+        }
+    }
+    li:nth-child(2) {
+        width: 18%;
+        > div {
+            span {
+                width: 50%;
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+            }
+            span:nth-child(1) {
+                color: @666;
+            }
+        }
+    }
+    li:nth-child(3) {
+        width: 42%;
+        >div {
+            p {
+                font-size: @font_size_14;
+                color: @red;
+            }
+        }
+        > div:nth-child(2) {
+            span {
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+            }
+            >span:nth-child(1) {
+                color: @666;
+                width: 30%;
+            }
+            >span:nth-child(2) {
+                color: @333;
+                width: 70%;
+            }
+        }
+        div:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+            >span:nth-child(1) {
+                color: @666;
+                width: 30%;
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+            }
+           .content {
+               width: 20%;
+               color: @666;
+               font-size: @font_size_14;
+               font-family: Microsoft YaHei;
+               margin-right: 5px;
+           }
+        }
+    }
+}
+
+.contractDetails_page-change {
+    padding: 10px 15px;
+    li {
+        display: flex;
+        justify-content: flex-start;
+        height: 40px;
+        align-items: center;
+        span:nth-child(1) {
+            width: 80px;
+            font-size: @font_size_14;
+            font-family: Microsoft YaHei;
+            color: @333;
+        }
+        div:nth-child(2) {
+            width: 200px;
+        }
+        span:nth-child(3) {
+            font-size: @font_size_14;
+            color: #449DE8;
+            font-family: Microsoft YaHei;
+            cursor: pointer;
+        }
+    }
+}
+
+.contractDetails_page-details {
+    padding: 10px 15px;
+}
+
+/*合约详情页面下方内容*/
+.contractContent_page {
+    padding-top: 10px;
+}
+
+.contractContent_page-header {
+    display: flex;
+    justify-content: flex-start;
+    li {
+        width:100px;
+        height:40px;
+        background:rgba(255,255,255,1);
+        border:1px solid rgba(204,204,204,1);
+        opacity:1;
+        line-height: 40px;
+        text-align: center;
+        margin-right: -1px;
+        cursor: pointer;
+    }
+    .selectButton {
+        background-color: #DC2D39;
+        color: @fff;
+        border: none;
+    }
+}
+
+.contractContent_page-content-holdings {
+    .holding_header {
+        margin-top: 20px;
+        height: 42px;
+        line-height: 42px;
+        background:rgba(245,246,247,1);
+        color: @333;
+        font-size: @font_size_14;
+        font-family:Microsoft YaHei;
+        display: flex;
+        justify-content: flex-start;
+        li {
+            text-align: center;
+        }
+        li:nth-child(1), li:nth-child(8){
+           width: 18%;
+        }
+        li:nth-child(2),  li:nth-child(3),  li:nth-child(4),  li:nth-child(5){
+            width: 8%;
+        }
+        li:nth-child(6), li:nth-child(7){
+            width: 16%;
+        }
+    }
+
+    .holding_content {
+        font-size: @font_size_14;
+        font-family:Microsoft YaHei;
+        display: flex;
+        justify-content: flex-start;
+        li {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            border-bottom:1px solid rgba(238,238,238,1);
+        }
+        li:nth-child(1), li:nth-child(8){
+            width: 18%;
+            display: flex;
+            justify-content: space-around;
+        }
+        li:nth-child(2),  li:nth-child(3),  li:nth-child(4),  li:nth-child(5){
+            width: 8%;
+        }
+        li:nth-child(6), li:nth-child(7){
+            width: 16%;
+        }
+        li:last-child {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button {
+                width:56px;
+                height:30px;
+                border-radius:5px;
+                color: @fff;
+                text-align: center;
+                line-height: 30px;
+                border: none;
+                outline: none;
+            }
+            button:nth-child(1) {
+                background-color: #DC2D39;
+            }
+            button:nth-child(2) {
+                background-color: #2F76EB;
+            }
+        }
+    }
+}
+
+.flow_header {
+    margin-top: 20px;
+    height: 42px;
+    line-height: 42px;
+    background:rgba(245,246,247,1);
+    color: @333;
+    font-size: @font_size_14;
+    font-family:Microsoft YaHei;
+    display: flex;
+    justify-content: flex-start;
+    li {
+        text-align: center;
+    }
+    li:nth-child(1), li:nth-child(3),li:nth-child(4),li:nth-child(5),li:nth-child(7) {
+        width: 12%;
+    }
+    li:nth-child(2), li:nth-child(6) {
+        width: 20%;
+    }
+}
+
+.flow_content {
+    font-size: @font_size_14;
+    font-family:Microsoft YaHei;
+    display: flex;
+    justify-content: flex-start;
+    li {
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        border-bottom:1px solid rgba(238,238,238,1);
+        width: 100%;
+    }
+    li:nth-child(1), li:nth-child(3),li:nth-child(4),li:nth-child(5),li:nth-child(7) {
+        width: 12%;
+    }
+    li:nth-child(2), li:nth-child(6) {
+        width: 20%;
+    }
+}
+
+.flow_page {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.contractContent_page-content-profit {
+    margin-top: 20px;
+    .profit_content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        label:nth-child(1) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 80px;
+        }
+        input:nth-child(2) {
+            height: 36px;
+            width:280px;
+            border-radius: 5px;
+            border:1px solid rgba(204,204,204,1);
+            text-indent: 16px;
+            font-size: 14px;
+        }
+        span:nth-child(3) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 120px;
+            padding-left: 20px;
+        }
+    }
+
+    .profit_button {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+        padding-left: 80px;
+        button {
+            width:280px;
+            height:46px;
+            background:rgba(220,45,57,1);
+            border: none;
+            border-radius: 5px;
+            color: @fff;
+        }
+    }
+
+    p {
+        margin-top: 20px;
+        margin-left: 80px;
+        color: @999;
+        letter-spacing: 1px;
+        font-family:Microsoft YaHei;
+        font-size: @font_size_14;
+    }
+}
+
+.contractContent_page-content-deposit {
+    margin-top: 20px;
+    .profit_content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        label:nth-child(1) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 80px;
+        }
+        input:nth-child(2) {
+            height: 36px;
+            width:280px;
+            border-radius: 5px;
+            border:1px solid rgba(204,204,204,1);
+            text-indent: 16px;
+            font-size: 14px;
+        }
+        span:nth-child(3) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 120px;
+            padding-left: 20px;
+        }
+    }
+
+    .profit_button {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+        padding-left: 80px;
+        button {
+            width:280px;
+            height:46px;
+            background:rgba(220,45,57,1);
+            border: none;
+            border-radius: 5px;
+            color: @fff;
+        }
+    }
+
+    p {
+        color: @999;
+        font-family:Microsoft YaHei;
+        font-size: @font_size_14;
+    }
+
+    p:nth-child(1) {
+        margin-top: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    p:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+        color: @333;
+        height: 40px;
+        line-height: 40px;
+       span:nth-child(1) {
+           width: 140px;
+       }
+        span:nth-child(2) {
+            width: 140px;
+        }
+    }
+}
+
+
+.contractContent_page-content-financing {
+    margin-top: 20px;
+
+    .profit_content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        label:nth-child(1) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 80px;
+        }
+        input:nth-child(2) {
+            height: 36px;
+            width:280px;
+            border-radius: 5px;
+            border:1px solid rgba(204,204,204,1);
+            text-indent: 16px;
+            font-size: 14px;
+        }
+        span:nth-child(3) {
+            font-size: @font_size_14;
+            color: @333;
+            font-family:Microsoft YaHei;
+            width: 120px;
+            padding-left: 20px;
+        }
+    }
+    .financing_content {
+        li {
+            height: 35px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span {
+                font-size: @font_size_14;
+                color: @333;
+            }
+            span:nth-child(1) {
+                width: 120px;
+            }
+            span:nth-child(2) {
+                width: 200px;
+            }
+        }
+    }
+
+    .profit_button {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+        padding-left: 80px;
+        button {
+            width:280px;
+            height:46px;
+            background:rgba(220,45,57,1);
+            border: none;
+            border-radius: 5px;
+            color: @fff;
+        }
+    }
+
+    p {
+        color: @999;
+        font-family:Microsoft YaHei;
+        font-size: @font_size_14;
+    }
+
+    p:nth-child(1) {
+        margin-top: 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    p:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+        color: @333;
+        height: 40px;
+        line-height: 40px;
+       span:nth-child(1) {
+           width: 140px;
+       }
+        span:nth-child(2) {
+            width: 140px;
+        }
+    }
+}
+
+/*提取利润弹窗*/
+.confirm_getProfit-content {
+    li {
+        height: 35px;
+    }
+}
+
+.confirm_financing-content {
+    li {
+        height: 35px;
+        display: flex;
+        justify-content: flex-start;
+        span {
+            width: 50%;
+            line-height: 35px;
+        }
+        span:nth-child(1) {
+            padding-left: 50px;
+        }
+    }
+}
+
+.contractDetails_page-number_settled {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    li {
+        width: 100%;
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            span {
+                width: 50%;
+                font-size: @font_size_14;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+            }
+            span:nth-child(1) {
+                color: @666;
+            }
+            span:nth-child(2) {
+                color: @333;
+            }
+        }
+    }
+}
+
+.button_group {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    button:nth-child(2) {
+        margin-left: 50px;
+    }
+}
+
+.nodata {
+    text-align: center;
+    img {
+        height: 240px;
+    }
+}
+
+.box(@c) {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: @c;
+    border: 1px solid @c;
+}
+
+.orange_box {
+    .box(#FDA84B);
+    background-color: rgba(253, 168, 75, 0.1);
+}
+
+.green_box {
+    .box(#2C9A2D);
+    background-color: rgba(44, 154, 45, 0.1);
+}
+
+.blue_box {
+    .box(#2F76EB);
+    background-color: rgba(47,118,235, 0.1);
+}

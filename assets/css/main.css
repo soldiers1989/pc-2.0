@@ -1,0 +1,190 @@
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+/* 全局路由动画 */
+.page-enter-active, .page-leave-active {
+    transition: opacity .4s;
+}
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+
+/* 字体颜色 */
+.fontRed {
+    color: #ff3d3d !important;
+}
+
+.fontGreen {
+    color: #1FAF31 !important;
+}
+
+.fontBlue {
+    color: #449DE8;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapFull {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-component {
+    margin-top: 90px;
+}
+
+/* 浮动 */
+.fl { float: left; }
+.fr { float: right; }
+.cf { zoom: 1; }
+.cf:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+    overflow:hidden;
+}
+
+/* 强制不换行 */
+.wn {
+    word-wrap:normal;
+    white-space:nowrap;
+}
+
+/* 强制换行 */
+.wb {
+    white-space:normal;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+/* 垂直居中 */
+.df-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tb-c {
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+.ts-c {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.ts-mc {
+    position: absolute;
+    left: 0;right: 0;
+    bottom: 0; top: 0;
+    margin: auto;
+}
+
+/* ele 重置 */
+.el-breadcrumb__inner {
+    color: #999 !important;
+}
+
+i {
+    font-style: normal;
+}
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type='checkbox']{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    position: relative;
+    top: 3px;
+    right: 4px;
+}
+
+input[type=checkbox]:checked {
+    background: url("../../static/images/confirm.png")no-repeat center;
+}
+
+.entrust .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color: #DC2D39 !important;
+    border-color: #DC2D39 !important;
+}
+.entrust .el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
+    box-shadow: none !important;
+}
+
+.el-radio-button__inner {
+    width: 140px;
+}
+.ver-code .el-button--danger {
+    background-color:#DC2D39 !important;
+    border-color: #DC2D39 !important;
+}
+.ver-code .el-button--small {
+    padding: 12px 18px !important;
+}
+
+.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link {
+    font-weight: normal !important;
+}
+
+.green {
+    color: #0FBB3B;
+}
+
+.red {
+    color: #DC2D39 !important;
+}
+
+.blue {
+    color: #2F76EB;
+}
+
+.sell-button .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color:#2F76EB !important;
+    border-color: #2F76EB !important;
+}

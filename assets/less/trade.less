@@ -1,0 +1,577 @@
+@import "reset";
+.b {
+    border: 1px solid red;
+}
+
+.trade_title {
+    height: 75px;
+    padding-top: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    span {
+        color: @999;
+    }
+}
+
+.trade_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+.person_menu {
+    width: 240px;
+}
+
+.hole_menu {
+    li {
+        background-color: @fff;
+    }
+    >li:nth-child(odd) {
+        height: 50px;
+        position: relative;
+        a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: @333;
+            text-align: center;
+            line-height: 50px;
+        }
+        i {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: @font_size_18;
+        }
+    }
+    >li:nth-child(3) {
+        margin-top: 10px;
+    }
+    li:nth-child(5) {
+        margin-top: 2px;
+    }
+    >li:nth-child(2), >li:nth-child(6) {
+        ul {
+            li {
+                height: 45px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 45px;
+                    color: @333;
+                }
+                .nuxt-link-active {
+                    color: @red;
+                    background-color: @fff;
+                }
+            }
+        }
+    }
+    >li:nth-child(4) {
+        ul {
+            li {
+                height: 45px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 45px;
+                    color: @333;
+                }
+                .nuxt-link-exact-active {
+                    color: @red;
+                    background-color: @fff;
+                }
+            }
+        }
+    }
+}
+
+.little_menu_trade {
+    ul {
+        li {
+            height: 45px;
+        }
+    }
+
+}
+
+.selectPage {
+    background-color: #EB2F30 !important;
+    color: #fff !important;
+}
+
+.person_content-content {
+    background-color: @fff;
+    width: 920px;
+}
+
+/*按天配资*/
+.day_page {
+    padding: 50px;
+}
+
+.buy_amount {
+    padding: 0 0 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #F5F5F5;
+    p {
+        width: 100px;
+        font-size: @font_size_14;
+        font-family:Helvetica;
+        font-weight:bold;
+        padding-top: 8px;
+    }
+    >div {
+        width: 420px;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                padding-bottom: 20px;
+                span {
+                    display: block;
+                    width:90px;
+                    height:36px;
+                    line-height: 36px;
+                    text-align: center;
+                    border:1px solid rgba(204,204,204,1);
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                .selectAmount {
+                    background:rgba(220,45,57,1);
+                    color: @fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.scan_amount {
+    input {
+        width:420px;
+        height:36px;
+        border-radius: 5px;
+        border:1px solid rgba(204,204,204,1);
+        opacity:1;
+        text-indent: 16px;
+        font-size: 14px;
+    }
+    p {
+        width: 400px;
+        line-height: 20px;
+        color: @fontRed;
+    }
+}
+
+.buy_product {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    p {
+        width: 100px;
+        font-size: @font_size_14;
+        font-family:Helvetica;
+        font-weight:bold;
+        padding-top: 8px;
+    }
+    >div {
+        width: 420px;
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            li {
+                width: 25%;
+                padding-bottom: 20px;
+                span {
+                    display: block;
+                    width:90px;
+                    height:36px;
+                    line-height: 36px;
+                    text-align: center;
+                    border:1px solid rgba(204,204,204,1);
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                .selectAmount {
+                    background:rgba(220,45,57,1);
+                    color: @fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.financing_info {
+    width: 700px;
+    padding-top: 10px;
+    background:rgba(247,250,255,1);
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 95px;
+        li {
+            width: 50%;
+            span {
+                display: inline-block;
+                font-family:Helvetica;
+                font-size: @font_size_14;
+                line-height: 45px;
+            }
+            span:nth-child(1) {
+                width: 100px;
+                font-weight:bold;
+                padding-left: 20px;
+            }
+            span:nth-child(2) {
+                width: 80px;
+                font-weight:bold;
+            }
+            span:nth-child(3) {
+                width: 150px;
+                color: @999;
+            }
+        }
+    }
+}
+
+.financing_params {
+    padding-top: 20px;
+    width: 700px;
+    margin-top: 1px;
+    background:rgba(247,250,255,1);
+    ul {
+        li:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+            p {
+                width: 50%;
+                >span:nth-child(1) {
+                    width: 100px;
+                    font-family:Helvetica;
+                    font-size: @font_size_14;
+                    font-weight: bold;
+                    padding-left: 20px;
+                }
+                .content {
+                    font-size: @font_size_14;
+                    color: @333;
+                    margin-right: 5px;
+                }
+            }
+        }
+        li{
+            height: 42px;
+            line-height: 42px;
+            display: flex;
+            justify-content: flex-start;
+            span {
+                display: inline-block;
+            }
+            >span:nth-child(1) {
+                width: 100px;
+                font-family:Helvetica;
+                font-size: @font_size_14;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+            >span:nth-child(2) {
+                font-size: @font_size_14;
+                color: @333;
+            }
+        }
+        .auto {
+            span:nth-child(3) {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+                font-size: @font_size_14;
+                span {
+                    color: #449DE8;
+                    margin-left: 5px;
+                    font-weight: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+        li:last-child {
+            span:nth-child(3) {
+                font-size: @font_size_14;
+                color: @ccc;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.financing_total {
+    width: 700px;
+    margin-top: 1px;
+    padding-top: 10px;
+    background:rgba(247,250,255,1);
+    ul {
+        >li {
+            height: 42px;
+            line-height: 42px;
+            span {
+                display: inline-block;
+            }
+            >span:nth-child(1) {
+                width: 100px;
+                font-family:Helvetica;
+                font-size: @font_size_14;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+        }
+        li:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+            span:nth-child(3), span:nth-child(4), span:nth-child(5) {
+                margin-left: 10px;
+                font-size: @font_size_14;
+            }
+        }
+        .coupon_info {
+            span {
+                display: inline-block;
+                font-size: @font_size_14;
+                color: #449DE8;
+            }
+            span:not(:nth-child(1)) {
+                margin-right: 15px;
+            }
+        }
+        .last_li {
+            >span:nth-child(1) {
+                width: 100px;
+                font-family:Helvetica;
+                font-size: @font_size_14;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+            >span:nth-child(2) {
+                text-align: left;
+                span {
+                    color: @red;
+                    font-weight: bold;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+.financing_button {
+    width: 700px;
+    margin-top: 35px;
+    text-align: center;
+    p {
+        color: @333;
+        font-size: @font_size_14;
+        padding: 10px;
+        span {
+            color: #449DE8;
+            cursor: pointer;
+        }
+        button {
+            width:200px;
+            height:40px;
+            background:rgba(220,45,57,1);
+            border-radius:5px;
+            border: none;
+            color: @fff;
+        }
+    }
+
+}
+
+/*确认申请的弹窗*/
+.confirm_financing-content {
+    li {
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+        font-size: @font_size_14;
+        color: @333;
+        span {
+            text-align: left;
+            box-sizing: border-box;
+        }
+        span:nth-child(1) {
+            width: 50%;
+            padding-right: 20px;
+            padding-left: 50px;
+        }
+        span:nth-child(2) {
+            width: 50%;
+        }
+    }
+}
+
+/*余额不足的弹窗*/
+.balance_pay_mention {
+    .charge_box {
+        line-height: 32px;
+        display: flex;
+        justify-content: flex-start;
+        span {
+            box-sizing: border-box;
+        }
+        span:nth-child(1) {
+            width:60%;
+            padding-left: 75px;
+        }
+        span:nth-child(2) {
+            width: 40%;
+    }
+    }
+    .recharge_button {
+        text-align: center;
+        margin-top: 20px;
+        button {
+            width:200px;
+            height:40px;
+            background:rgba(220,45,57,1);
+            border-radius:5px;
+            color: @fff;
+            border: none;
+        }
+    }
+}
+
+/*自动补保的弹窗*/
+.confirm_financing {
+    padding-bottom: 10px;
+    p {
+        line-height: 32px;
+        font-size: @font_size_14;
+        color: @333;
+    }
+}
+
+/*合约申请成功的弹窗*/
+.success_financing-content {
+    p:nth-child(2) {
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+    p:nth-child(3) {
+        padding: 0 50px;
+    }
+    ul {
+        padding-left: 50px;
+        li {
+            height: 32px;
+            line-height: 32px;
+            span {
+                font-size: @font_size_14;
+                color: @333;
+            }
+            span:nth-child(1) {
+                width: 45%;
+                text-align: right;
+                padding-right: 20px;
+            }
+            span:nth-child(2) {
+                width: 55%;
+            }
+        }
+    }
+}
+
+/*week*/
+.financing_params_week {
+    padding-top: 20px;
+    width: 700px;
+    margin-top: 1px;
+    background:rgba(247,250,255,1);
+    ul {
+        li:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+            p {
+                width: 50%;
+                >span:nth-child(1) {
+                    width: 100px;
+                    font-family:Helvetica;
+                    font-size: @font_size_14;
+                    font-weight: bold;
+                    padding-left: 20px;
+                }
+                .content {
+                    font-size: @font_size_14;
+                    color: @333;
+                    margin-right: 5px;
+                }
+            }
+        }
+        li{
+            height: 42px;
+            line-height: 42px;
+            display: flex;
+            justify-content: flex-start;
+            span {
+                display: inline-block;
+            }
+            span:nth-child(1) {
+                width: 100px;
+                font-family:Helvetica;
+                font-size: @font_size_14;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+            span:nth-child(2) {
+                font-size: @font_size_14;
+                color: @333;
+            }
+        }
+        .auto {
+            span:nth-child(3) {
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+                span {
+                    color: #449DE8;
+                    margin-left: 5px;
+                    font-weight: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+        li:last-child {
+            span:nth-child(3) {
+                font-size: @font_size_14;
+                color: @ccc;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.button_group {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    button:nth-child(2) {
+        margin-left: 50px;
+    }
+}

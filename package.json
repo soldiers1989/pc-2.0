@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-ssr",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "chenjie <chenjiecloud@163.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "config": {
+    "nuxt": {
+      "host": "127.0.0.1",
+      "port": "8888"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.6",
+    "es6-promise": "^4.2.4",
+    "node-jsencrypt": "^1.0.0",
+    "nuxt": "^1.0.0",
+    "vue-clipboard2": "^0.2.1",
+    "vue-seamless-scroll": "^1.1.16",
+    "vue-signature": "^2.3.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.0"
+  }
+}

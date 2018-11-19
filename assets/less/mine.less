@@ -1,0 +1,556 @@
+@import "reset";
+
+.b {
+    border: 1px solid black;
+}
+
+.person_title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    span {
+        color: @999;
+        font-size: @font_size_14;
+    }
+}
+
+.person_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+.person_menu {
+    width: 240px;
+}
+
+.hole_menu {
+    width: 240px;
+    margin-right: 40px;
+    .item {
+        border: none;
+        line-height: 50px;
+        color: #333;
+        text-decoration: none;
+        outline: none;
+        display: block;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1px;
+        img {
+            vertical-align: middle;
+        }
+        i {
+            font-size: 22px;
+            padding-left: 37px;
+        }
+        .account {
+            width: 20px;
+            height: 22px;
+            padding-left: 52px;
+            padding-right: 22px;
+        }
+        .verified {
+            width: 23px;
+            height: 17px;
+            padding-left: 50px;
+            padding-right: 21px;
+        }
+        .password {
+            width: 18px;
+            height: 21px;
+            padding-left: 53px;
+            padding-right: 23px;
+        }
+        .bankcard {
+            width: 21px;
+            height: 17px;
+            padding-left: 51px;
+            padding-right: 22px;
+        }
+        .coupon {
+            width: 22px;
+            height: 17px;
+            padding-left: 51px;
+            padding-right: 19px;
+        }
+        .share {
+            width: 20px;
+            height: 20px;
+            padding-left: 52px;
+            padding-right: 22px;
+        }
+        &.nuxt-link-active {
+            background-color: #DC2D39;
+            color: #fff;
+        }
+
+    }
+    .item2 {
+        justify-content: center !important;
+        &.nuxt-link-active {
+            color: #DC2D39 !important;
+            background-color: #fff !important;
+        }
+    }
+
+    > li {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: @fff;
+        display: flex;
+        justify-content: space-around;
+    }
+    > li:nth-child(1) {
+        div {
+            line-height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        span {
+            display: flex;
+            align-items: center;
+             margin-left: 20px;
+            width: 20px;
+            height: 22px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            text-align: center;
+            // width: 60%;
+        }
+        i {
+            font-size: 22px;
+        }
+    }
+    .little_menu {
+        height: 135px;
+        li {
+            height: 45px;
+        }
+    }
+    li:nth-child(3), li:nth-child(4), li:nth-child(5), li:nth-child(6), li:nth-child(7) {
+        margin-top: 1px;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #333333;
+    }
+}
+
+.little_menu {
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #333333;
+    }
+    .nuxt-link-exact-active {
+        color: @red;
+        background-color: @fff;
+    }
+}
+
+.person_content-content {
+    width: 920px;
+    background-color: #fff;
+}
+
+.selectPage {
+    background-color: #EB2F30 !important;
+    color: #fff !important;
+}
+
+/*个人账户页面*/
+.account_page {
+    width: 100%;
+    padding: 0 35px;
+    background-color: @fff;
+}
+
+.top_sec {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 15px;
+    font-size: @font_size_14;
+    border-bottom: 1px solid rgba(238,238,238,1);
+    .head_pic {
+        img {
+            height: 80px;
+            width: 80%;
+        }
+    }
+    ul:nth-child(2) {
+        margin-left: 30px;
+        li {
+            height: 25px;
+            line-height: 25px;
+        }
+        li:nth-child(2), li:nth-child(3) {
+            color: @999;
+            display: flex;
+            justify-content: flex-start;
+            span:nth-child(2) {
+                margin-left: 15px;
+            }
+        }
+    }
+    ul:nth-child(3) {
+        margin-left: 70px;
+        padding-top: 25px;
+        li {
+            display: flex;
+            justify-content: flex-start;
+            line-height: 25px;
+            height: 25px;
+            width: 180px;
+            span {
+                width: 50%;
+            }
+            span:nth-child(1) {
+                color: @333;
+                text-align: left;
+            }
+            span:nth-child(2) {
+                color: #449DE8;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bottom_sec {
+    padding: 30px 15px;
+}
+
+.amount_sec {
+    display: flex;
+    justify-content: flex-start;
+    div {
+        p:nth-child(1) {
+            font-size: @font_size_14;
+            color: @333;
+            line-height: 25px;
+            font-family:Microsoft YaHei;
+        }
+        p:nth-child(2) {
+            line-height: 50px;
+            height: 50px;
+            color: @red;
+            font-size: 30px;
+            font-family:Helvetica;
+            font-weight:bold;
+        }
+    }
+    ul:nth-child(2) {
+        margin-left: 80px;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        li {
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            span:nth-child(1) {
+                color: @999;
+                font-size: @font_size_14;
+                line-height: 25px;
+                height: 25px;
+            }
+            span:nth-child(2) {
+                font-family:Helvetica;
+                font-weight:bold;
+                line-height:32px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.button_sec {
+    margin-top: 27px;
+    button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+    }
+    button:nth-child(1) {
+        width: 72px;
+        height: 34px;
+        border: 1px solid rgba(153, 153, 153, 1);
+        border-radius: 5px;
+        color: @333;
+    }
+    button:nth-child(2) {
+        width: 72px;
+        height: 34px;
+        border: 1px solid rgba(153, 153, 153, 1);
+        border-radius: 5px;
+        color: @333;
+        margin-left: 20px;
+    }
+    button:nth-child(3) {
+        width: 80px;
+        height: 34px;
+        border: 1px solid rgba(153, 153, 153, 1);
+        border-radius: 5px;
+        opacity: 1;
+        color: @333;
+        margin-left: 20px;
+    }
+}
+
+/*资金流水*/
+
+.flow_page {
+    padding: 35px;
+    background-color: @fff;
+}
+
+.flow_header {
+   padding: 15px;
+    border-bottom: 1px solid #EEEEEE;
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            width: 100%;
+            button {
+                width:90px;
+                height:36px;
+                border:1px solid rgba(204,204,204,1);
+                text-align: center;
+                color: @333;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            .selectButton {
+                background-color: @red;
+                color: @fff;
+                border:1px solid @red;
+            }
+        }
+    }
+}
+
+.flow_content {
+    margin-top: 30px;
+}
+
+.flow_content-header {
+    width:850px;
+    height:42px;
+    background:rgba(245,246,247,1);
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            color: #333333;
+            text-align: center;
+            line-height: 42px;
+        }
+        li:nth-child(1) {
+            width: 20%;
+        }
+        li:nth-child(2) {
+            width: 10%;
+        }
+        li:nth-child(3) {
+            width: 10%;
+        }
+        li:nth-child(4) {
+            width: 10%;
+        }
+        li:nth-child(5) {
+            width: 10%;
+        }
+        li:nth-child(6) {
+            width: 10%;
+        }
+        li:nth-child(7) {
+            width: 10%;
+        }
+        li:nth-child(8) {
+            width: 20%;
+        }
+    }
+}
+
+.flow_content-content {
+    height: 50px;
+    line-height: 50px;
+    border-bottom:1px solid rgba(238,238,238,1);
+    display: flex;
+    justify-content: center;
+    li {
+        text-align: center;
+    }
+    li:nth-child(1) {
+        width: 20%;
+    }
+    li:nth-child(2) {
+        width: 10%;
+    }
+    li:nth-child(3) {
+        width: 10%;
+    }
+    li:nth-child(4) {
+        width: 10%;
+    }
+    li:nth-child(5) {
+        width: 10%;
+    }
+    li:nth-child(6) {
+        width: 10%;
+    }
+    li:nth-child(7) {
+        width: 10%;
+    }
+    li:nth-child(8) {
+        width: 20%;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+}
+
+
+/*实名认证页面*/
+.auth_page {
+    background-color: @fff;
+    padding: 35px;
+    p {
+        padding: 5px 0 0 15px;
+        line-height: 44px;
+        color: #333333;
+        font-size: @font_size_18;
+        border-bottom:1px solid rgba(238,238,238,1);
+    }
+}
+
+.auth_content {
+    padding-top: 40px;
+    div:nth-child(1), div:nth-child(2),div:nth-child(3) {
+        display: flex;
+        justify-content: flex-start;
+        height: 50px;
+        label {
+            width: 130px;
+            text-align: right;
+            color: @333;
+            line-height: 50px;
+            padding-right: 10px;
+        }
+        input {
+            width:270px;
+            height:36px;
+            background:rgba(255,255,255,1);
+            border:1px solid rgba(204,204,204,1);
+            border-radius: 5px;
+            margin-top: 7px;
+            margin-left: 10px;
+            text-indent: 18px;
+            font-size: 14px;
+        }
+    }
+}
+
+.submit_button {
+    margin-left: 150px;
+    margin-top: 43px;
+    button {
+        width:270px;
+        height:46px;
+        background:rgba(220,45,57,1);
+        border-radius:5px;
+       color: @fff;
+        border: none;
+        outline: none;
+    }
+}
+
+.auth_mention {
+    margin-left: 160px;
+    margin-top: 15px;
+    p {
+        width: 230px;
+        text-align: center;
+        border: none;
+        color: @999;
+        font-size: @font_size_14;
+        line-height: 20px;
+
+    }
+}
+
+.auth_content-isAuth {
+    p {
+        padding-top: 40px;
+        border: none;
+        color: @999;
+        font-size: @font_size_14;
+    }
+    ul {
+        padding: 0 15px;
+        li {
+            span {
+                display: inline-block;
+                height: 50px;
+                line-height: 50px;
+            }
+            span:nth-child(1) {
+                width: 150px;
+            }
+            span:nth-child(2) {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/*安全中心页面*/
+.safeCenter_page {
+    background-color: @fff;
+    padding: 35px;
+    p {
+        padding: 5px 0 0 15px;
+        line-height: 44px;
+        color: #333333;
+        font-size: @font_size_18;
+        border-bottom:1px solid rgba(238,238,238,1);
+    }
+}
+
+.safeCenter_Content {
+    padding: 15px;
+    li {
+        width: 240px;
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        span:nth-child(3) {
+            color: #449DE8;
+            cursor: pointer;
+        }
+    }
+}

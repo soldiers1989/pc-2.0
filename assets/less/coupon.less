@@ -1,0 +1,85 @@
+.b {
+    border: 1px solid red;
+}
+
+.main {
+    padding-left: 15px;
+    .item {
+        background: url(~/images/img_coupon.png) center center no-repeat;
+        height: 136px;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 22px;
+        box-shadow:0px 0px 10px rgba(0,0,0,0.16);
+        .left {
+            width: 138px;
+            text-align: center;
+            li {
+                color: #fff;
+                margin-bottom: 8px;
+            }
+            li:nth-child(1) {
+                font-size: 24px;
+                margin-top: 38px;
+                i {
+                    font-size: 16px;
+                }
+            }
+            li:nth-child(2) {
+                font-size: 14px;
+            }
+        }
+        .right {
+            width: 264px;
+            text-align: center;
+            li {
+                color: #333;
+            }
+            li:nth-child(1) {
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            li:nth-child(2) {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                .no-use {
+                    width: 90px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #DC2D39;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+                .use {
+                    width: 90px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #999;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+            li:nth-child(3) {
+                font-size: 14px;
+            }
+        }
+    }
+    .no-data {
+        padding-left: 52px;
+        padding-bottom: 20px;
+        img {
+            height: 200px;
+        }
+    }
+}
+
